@@ -9,7 +9,12 @@ import {
   CardFooter
 } from '@/components/ui/card';
 import { Icons } from '@/components/icons';
+import type { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: { absolute: 'Zeno Admin Dashboard' }
+};
 
 export default async function OverViewLayout({
   sales,
@@ -22,7 +27,6 @@ export default async function OverViewLayout({
   bar_stats: React.ReactNode;
   area_stats: React.ReactNode;
 }) {
-
   return (
     <PageContainer>
       <div className='flex flex-1 flex-col gap-4'>
